@@ -5,7 +5,7 @@ app.set('port', (process.env.PORT || 5000));
 
 
 app.get('/storytime', function(req, res) {
-	res.send("<p>hey"+req.query.name +" nice to meet you</p>");
+	res.send("<p>hey "+req.query.name +" nice to meet you</p>");
 });
 
 app.listen(app.get('port'), function() {
